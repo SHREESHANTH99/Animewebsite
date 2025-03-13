@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: rgb(10, 13, 36);
 }
+
 h1,
 h2,
 h3,
-h4{
+h4 {
     color: var(--title-color);
     font-weight: var(--weight-700);
 }
+
 ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-p{
+
+p {
     line-height: 1.6;
 }
+
 .nav {
     display: flex;
     justify-content: space-around;
@@ -40,9 +46,11 @@ p{
     display: flex;
 
 }
-img{
+
+img {
     max-width: 100%;
 }
+
 .navigation li {
     font-size: large;
 }
@@ -65,77 +73,90 @@ a {
     color: rgb(104, 121, 231);
 }
 
-.grid{
+.grid {
     display: grid;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
-.home_container{
+
+.home_container {
     grid-template-columns: 4fr 8fr;
     align-items: center;
     padding-left: 40px;
 }
 
-.home_content{
+.home_content {
     color: white;
 }
-.Home_title{
+
+.Home_title {
     text-transform: uppercase;
     font-size: 2.5rem;
 }
-.Home_description{
-    font-family:'Times New Roman', Times, serif;
+
+.Home_description {
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
-    margin-block: 1.25rem 1.5rem; font-family: "Poppins", sans-serif;
+    margin-block: 1.25rem 1.5rem;
+    font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
 
-body{
+body {
     background-image: url('img/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
 }
-.nav, .home {
+
+.nav,
+.home {
     background: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.btn{
+
+.btn {
     display: inline-block;
-    background-color:  rgb(35, 48, 134);
+    background-color: rgb(35, 48, 134);
     color: white;
     font-size: large;
     width: 156px;
     height: 5vh;
     align-content: center;
     text-align: center;
-    border-radius:6px ;
+    border-radius: 6px;
 }
-.brand{
+
+.brand {
     padding-left: 36px;
     padding-right: 36px;
 }
-.home{
+
+.home {
     padding: 91px;
 }
-.brand_item{
+
+.brand_item {
     border-radius: 0.5rem;
     background-color: rgba(163, 172, 231, 0.042);
 }
 
-.section_title{
+.section_title {
     color: white;
     font-size: 1.75rem;
     margin-bottom: 1.75rem;
 }
-.section{
+
+.section {
     padding-left: 36px;
     padding-top: 20px;
 }
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -147,9 +168,11 @@ a{
     .menu-toggle {
         display: block;
     }
+
     .navigation ul {
         display: none;
     }
+
     .navigation ul.active {
         display: flex;
         flex-direction: column;
@@ -164,10 +187,10 @@ a{
 
 .home_img {
     width: 100%;
-    max-width: 670px; 
-    height: auto; 
+    max-width: 670px;
+    height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 
@@ -190,14 +213,15 @@ a{
 
 @media (max-width: 320px) {
     .home_img {
-        max-width: 90%; 
+        max-width: 90%;
     }
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     padding-top: 20px;
 }
-.anime-data{
+
+.anime-data {
     color: white;
 }
 
@@ -206,38 +230,38 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  
-  .anime_swiper .swiper-slide img {
-    width: 100%;
-    height: 250px;
+}
+
+.anime_swiper .swiper-slide img {
+    width: 70%;
+    height: 375px;
     object-fit: cover;
     border-radius: 10px;
-  }
-  
-  .anime-data {
+}
+
+.anime-data {
     padding: 10px;
     background: #1a1a1a;
     color: white;
-    width: 100%;
+    width: 70%;
     border-radius: 0 0 10px 10px;
-  }
-  
-  .anime-title {
+}
+
+.anime-title {
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .anime-detail {
+}
+
+.anime-detail {
     font-size: 14px;
     opacity: 0.8;
-  }
-  
-  .anime-rating {
+}
+
+.anime-rating {
     font-size: 16px;
     color: gold;
-  }
-  
-  /* .swiper{
+}
+
+.swiper {
     padding-right: 20px;
-  } */
+}
