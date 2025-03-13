@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anidrake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav ">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo"><img src="img/logo2.png" alt="" width="180"></div>
+        <div class="navigation grid">
+            <ul>
+                <li><a href="#" class="nav_link active_link">Home</a></li>
+                <li><a href="https://hianime.to/" class="nav_link">Online-Anime</a></li>
+                <li><a href="#" class="nav_link">Our plans</a></li>
+                <li><a href="#" class="nav_link">Our-process</a></li>
+                <li><a href="#" class="nav_link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="home">
+            <div class="home_container container grid">
+                <div class="home_content">
+                    <h1 class="Home_title">BEST ANIME AND MANGA STREAMING PLATFORM</h1>
+                    <p class="Home_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                        quasi quas, a voluptatibus ullam eveniet explicabo voluptas quam dolorem quis, doloribus
+                        quisquam, commodi consequatur deleniti veritatis veniam. Vitae iure illum recusandae.</p>
+                    <a href="#" class="btn">Start Free Trial</a>
+                </div>
+                <img src="img/akatsuki.png" alt="" class="home_img">
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="swiper brand_swiper container grid">
+                <div class="swiper-wrapper">
+                    <div class="brand_item swiper-slide"><img src="img/logo-1.png" alt="brand_logo Logo 1"></div>
+                    <div class="brand_item swiper-slide"><img src="img/logo-3.png" alt="brand_logo Logo 2"></div>
+                    <div class="brand_item swiper-slide"><img src="img/Beyblade.png" alt="brand_logo Logo 3"></div>
+                    <div class="brand_item swiper-slide"><img src="img/Naruto.png" alt="brand_logo Logo 4"></div>
+                    <div class="brand_item swiper-slide"><img src="img/Bleach.png" alt="brand_logo Logo 5"></div>
+                    <div class="brand_item swiper-slide"><img src="img/One-Piece.png" alt="brand_logo Logo 6"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="special_anime container section">
+            <h2 class="section_title">Special For You</h2>
+        </section>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var brand_swiper = new Swiper(".brand_swiper", {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                grabCursor: true,
+                touchEventsTarget: "wrapper",
+                simulateTouch: true,
+                touchRatio: 1,
+                touchAngle: 45,
+                breakpoints: {
+                    320: { slidesPerView: 2, spaceBetween: 10 },
+                    640: { slidesPerView: 3, spaceBetween: 15 },
+                    1024: { slidesPerView: 4, spaceBetween: 20 },
+                }
+            });
+            var menuToggle = document.querySelector(".menu-toggle");
+            var navigationUl = document.querySelector(".navigation ul");
+
+            if (menuToggle && navigationUl) {
+                menuToggle.addEventListener("click", function () {
+                    navigationUl.classList.toggle("active");
+                });
+            } else {
+                console.error("Menu toggle or navigation ul not found");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
