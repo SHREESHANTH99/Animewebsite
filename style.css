@@ -265,3 +265,68 @@ a {
 .swiper {
     padding-right: 20px;
 }
+
+.banner_img{
+    overflow: hidden;
+}
+.grid1{
+    display: grid;
+    gap: 20px;
+}
+.subscription_section{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    padding-top: 40px;
+    column-gap: 42px;
+    background-color: #9797c211;
+    border: 0px solid black;
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+
+.banner_img{
+    grid-column: 2/3;
+}
+.CASHBACK{
+    color:white;
+    font-size: x-large;
+}
+.sub{
+    grid-column: 3/4;
+}
+.descrip {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin-block: 1.25rem 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: small;
+}
+.btnn{
+    color: #fbfbffb1;
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: rgb(35, 48, 134);
+    width:7vw;
+    height: 4vh;
+    text-align: center;
+    align-content: center;
+}
+
+.popular{
+    color: white;
+    padding-left: 59px;
+}
+
+.trending1{
+    background-color: #9797c211;
+    padding-left: 59px;
+    color: white;
+    font-weight: bolder;
+}
+.swiper1{
+    background-color: #9797c211;
+    padding-bottom: 20px;
+}
