@@ -358,6 +358,9 @@ a {
     grid-column: 2/3;
 
 }
+.connect{
+    color: red;
+}
 .about{
     color: white;
 }
@@ -372,4 +375,10 @@ a {
     align-items: center;
     gap: 20px;
     /* background-color: #7d7a7ade; */
+}
+.social-icon svg {
+    transition: transform 0.5s ease;
+}
+.social-icon:hover svg {
+    transform: rotate(100deg);
 }
